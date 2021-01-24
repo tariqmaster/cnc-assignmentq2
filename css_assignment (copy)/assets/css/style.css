@@ -1,26 +1,5 @@
-*{
-    box-sizing: border-box;
-}
-a:link, a:visited {
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a:hover, a:active {
-  background-color: rgba(2, 6, 236, 0.904);
-}
-.topaddbar 
-{
-display: flex;
-background-color: rgb(37, 36, 36);
-            padding-top: 10px;
-            padding-bottom: 15px;
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-        * {
+        *{
+            box-sizing: border-box;
             margin: 0px;
             padding: 0px;
             flex-wrap: wrap;
@@ -28,38 +7,75 @@ background-color: rgb(37, 36, 36);
             scroll-behavior: smooth;
 
         }
-         .socadd {
-            /* padding-left: 20px; */
-            margin-left: 20px;
-            background-color: rgb(70, 66, 66);
-            border-radius: 100%;
+        .packages{
+            margin: 0px;
+            padding; 0px;
+            text-align: center;
+        }
+        .cards{
+            width: 28%;
+            background-color: grey;
+            margin: 0px;
+            display: inline-block ;
+        }
+        .image {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .title{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .des{
+            text-align: center;
+            padding: 4px;
+        }
+        button{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: cornsilk;
+            border: 1px solid black;
             padding: 5px;
-            padding-right: 10px;
-            padding-left: 10px;
-            cursor: pointer;
-            /* width: 15px; */
-            align-items: center;
-            /* margin: 20px auto; */
-
-
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+        }        
+        
+        a:link, a:visited {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
         }
 
-        .socadd p {
-            /* cursor: pointer; */
-            color: white;
-            /* margin: 0 auto; */
-            font-size: 20px;
+        a:hover, a:active {
+        background-color: rgba(134, 161, 128, 0.904);
         }
-
-        .youtube {
-            font-size: 11px;
-            cursor: pointer;
-            color: white;
+        .topaddbar 
+        {
+        display: flex;
+        background-color: rgb(37, 36, 36);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        }
+         .socadd {
             margin-left: 20px;
             background-color: rgb(70, 66, 66);
             border-radius: 100%;
-            padding-top: 0.7%;
-
+            cursor: pointer;
+            padding: 10px;
+            padding-left: 20px;
+            width: 50px;
+            height: 50px;
+            font-size: 15px;
+            align-items: center;
+            transform: translateX(-50%);
         }
 
         .right {
@@ -69,11 +85,10 @@ background-color: rgb(37, 36, 36);
             margin-right: 3%;
         }
 
-        .right3 {
+        .right2 {
             margin-top: 8px;
             color: white;
             margin-right: 2%;
-            /* margin-top: 20px; */
         }
 
         .right3 img {
@@ -91,7 +106,6 @@ background-color: rgb(37, 36, 36);
             border-radius: 3px;
             flex-wrap: wrap;
         }
-
         .right4 input:hover {
             background-color: #43bb4b;
             border: 1px solid #43bb4b;
@@ -101,25 +115,6 @@ background-color: rgb(37, 36, 36);
             .topaddbar {
                 padding-left: 3%;
             }
-
-            .socadd {
-
-                margin-left: 9%;
-                margin-bottom: 3%;
-
-            }
-
-            .youtube {
-                margin-left: 9%;
-                margin-right: 2%;
-                padding-top: 2.5%;
-                padding-bottom: 5%;
-                margin-bottom: 20px;
-                padding-left: 5px;
-                padding-right: 5px;
-
-            }
-
             .right {
                 margin-left: -3%;
                 /* margin-right: -3%; */
@@ -169,7 +164,7 @@ background-color: rgb(37, 36, 36);
 
         .container1 {
             font-family: 'Montserrat', sans-serif;
-            background-image: url('./pics/main-body-with.png');
+            background-image: url('../img/banner.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -179,13 +174,26 @@ background-color: rgb(37, 36, 36);
             align-items: center;
             text-align: center;
         }
-
+        .h1pack {
+            padding-top: 0%;
+            font-weight: 1200;
+            font-weight: bold;
+            text-align: center;
+           
+        }
+        .h1pack h5 {
+            color:grey;
+            padding-top: 0%;
+            font-weight: 800;
+            text-align: center;
+           
+        }
         .h1 {
-            /* padding-left: 26.5%; */
-            font-size: 36px;
-            padding-top: 10.7%;
-            font-weight: 900;
-            /* margin: auto; */
+            font-size: 100px;
+            padding-top: 10%;
+            font-weight: 1200;
+            font-weight: bold;
+           
         }
 
         .lower {
@@ -293,7 +301,7 @@ background-color: rgb(37, 36, 36);
 
         .about {
             font-family: 'Montserrat', sans-serif;
-            background-image: url('./pics/main-icon.png');
+            background-image: url('../img/main-icon.png');
             padding-top: 40px;
             background-position: center;
             background-repeat: no-repeat;
@@ -609,8 +617,8 @@ background-color: rgb(37, 36, 36);
 
         .start {
             padding-top: 40px;
-            background: linear-gradient(90deg, rgba(33, 124, 5, 0.3), #477919), url('./pics/main-body-without.png');
-            /* background-image: url('./pics/main-body-without.png'); */
+            background: linear-gradient(90deg, rgba(33, 124, 5, 0.3), #477919), url('../img/main-body-without.png');
+            /* background-image: url('../img/main-body-without.png'); */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
