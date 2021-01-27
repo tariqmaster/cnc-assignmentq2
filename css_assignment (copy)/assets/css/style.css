@@ -7,16 +7,20 @@
             scroll-behavior: smooth;
 
         }
-        .packages{
+
+        .packages {
             margin: 0px;
             padding; 0px;
             text-align: center;
+            background-color: rgb(228, 218, 218);
         }
         .cards{
-            width: 28%;
-            background-color: grey;
+            width: 22%;
+            background-color: rgb(255, 255, 255);
             margin: 0px;
             display: inline-block ;
+            border: 1px solid grey;
+        
         }
         .image {
             margin-top: 20px;
@@ -27,17 +31,44 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+        .packages .cards .title h1 {
+            color: #078610;
+        } 
+
         .des{
             text-align: center;
             padding: 4px;
         }
-        button{
-            margin-top: 30px;
-            margin-bottom: 30px;
-            background-color: cornsilk;
-            border: 1px solid black;
+        .packagesbottom{
+            offset-position: outline;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            color: white;
+            background-color: rgb(228, 218, 218);
+        }
+        .packages button{
+            margin-bottom: -80px;
+            background-color: rgb(71, 149, 212);
+            border: 1px solid blue;
             padding: 5px;
             border-radius: 5px;
+            color: white;
+            transform: translateY(30%);
+            
+        }
+        .packagesbottom button{
+            background-color: #43bb4b;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        .packages .cards:hover{
+            transform: scale(1.2);
+            border: 3px solid rgb(1, 218, 226);
+            margin-bottom: 50px;
         }
         button:hover{
             background-color: black;
@@ -175,10 +206,11 @@
             text-align: center;
         }
         .h1pack {
-            padding-top: 0%;
+            padding-top: 2%;
             font-weight: 1200;
             font-weight: bold;
             text-align: center;
+            background-color: rgb(228, 218, 218);
            
         }
         .h1pack h5 {
@@ -462,7 +494,8 @@
         }
 
         .footercontainer {
-            display: flex;
+            display: fleX;
+            justify-content: center;
             padding-left: 10%;
             padding-right: 10%;
             /* margin-bottom: ; */
@@ -471,8 +504,10 @@
 
         .footercontainer1 {
             display: flex;
+            justify-content: center;
             padding-top: 0px;
             padding-left: 10%;
+            padding-right: 10%;
             margin-top: -4px;
             padding-bottom: 5%;
         }
