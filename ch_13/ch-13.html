@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:url("background.jpg")
+        overflow: hidden;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 210px 210px 80px;
+        grid-template-areas: "image" "text" "stats";
+        margin-left: 15px;
+
+        font-family: roboto;
+        border-radius: 18px;
+        background:white;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+        text-align: center;
+
+        transition: 0.5s ease;
+        cursor: pointer;
+
+    }
+    .card-image1{
+        grid-area: image;
+        background: url("./assets/1.jpeg");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background size: cover;
+    }
+    .card-image2{
+        grid-area: image;
+        background: url("./assets/wolf.jpeg");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background size: cover;
+    }
+    .card-image3{
+        grid-area: image;
+        background: url("./assets/2.jpeg");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background size: cover;
+    }
+    .card-text{
+        grid-area: text;
+        margin: 25px;
+    }
+    .card-text .date{
+        color: rgb(255,7,110);
+        font-size: 30px;    
+    }
+    .card-text p{
+        color: grey;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .card-text h{
+        margin-top: 0px;
+        font-size: 28px;
+    }
+    .card-stats {
+        grid-area: stats;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background: rgb(255,7,110)
+
+    }
+    .card-stats .stats{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        color: white;
+    }
+    .card-stats .type{
+        font-size: 8px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .card-stats .value{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .card-stats .border{
+        border-left: 1px solid rgb(172,26,87);
+        border-right: 1px solid rgb(172,26,87);
+        position: relative;
+    }
+    .card-stats .border button{
+        transform: translateY(50%);
+    }
+    .card-stats .value sup{
+        font-size: 12px;
+    }
+    .card:hover {
+        transform: scale(1.2);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    }
+
+    </style>
+</head>
+<body> 
+    <div class="card">
+        <div class="card-image1"></div>
+        <div class="card-text">
+            <span class="date">4 days ago</span>
+            <h2>Beatiful Sunshine in Karachi</h2>
+            <p>Karachi is the biggest city and industrial hub of Pakistan. </p>
+        </div>
+        <div class="card-stats">
+            <div class="stats">
+                <div class="value">4<sup>m</sup></div>
+                <div class="type">read</div>
+            </div>
+            <div class="stats border">
+                <div class="value">5123</div>
+                <div class="type">views</div>
+            </div>
+            
+            <div class="stats">
+                <div class="value"><del>28 </del> 32</div>
+                <div class="type">comments</div>
+            </div>
+                 
+        </div> 
+             
+    </div>
+
+
+<div class="card">
+    <div class="card-image2"></div>
+    <div class="card-text">
+        <span class="date">100 days ago</span>
+        <h2>Tibaten Wolf</h2>
+        <p>Beautiful predator, now left in a few numbers in Pakistan. </p>
+    </div>
+    <div class="card-stats">
+        <div class="stats">
+            <div class="value">8<sup>m</sup></div>
+            <div class="type">read</div>
+        </div>
+        <div class="stats border">
+            <div class="value">6123</div>
+            <div class="type">views</div>
+        </div>
+        
+        <div class="stats">
+            <div class="value"><del>66 </del> 88</div>
+            <div class="type">comments</div>
+        </div>
+             
+    </div> 
+         
+</div>
+
+    <div class="card">
+        <div class="card-image3"></div>
+        <div class="card-text">
+            <span class="date">122 days ago</span>
+            <h2>Butterflies of Sindh</h2>
+            <p>With growing pollution, number of butterflies is decreasing in Sindh.</p>
+        </div>
+        <div class="card-stats">
+            <div class="stats">
+                <div class="value">6<sup>m</sup></div>
+                <div class="type">read</div>
+            </div>
+            <div class="stats border">
+                <div class="value">9583</div>
+                <div class="type">views</div>
+            </div>
+            
+            <div class="stats">
+                <div class="value"><del>108 </del> 322</div>
+                <div class="type">comments</div>
+            </div>
+                 
+        </div> 
+             
+    </div>
+
+</body>
+</html>
